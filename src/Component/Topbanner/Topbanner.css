@@ -1,0 +1,15 @@
+.top-banner{
+   
+    background-image: url('../Image//img01.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.banner-image{
+    color:white;
+    margin:0%;
+    border: 0%;
+    padding:0%;
+    
+    
+}

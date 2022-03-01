@@ -1,0 +1,13 @@
+.menu{
+    display: flex;
+}
+.menu-items{
+    list-style: none;
+    display: flex;
+}
+.items{
+    margin:15px;
+}
+.menu-bar{
+    margin-left: 400px;
+}
