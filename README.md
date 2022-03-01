@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 -----------------------------------------------
 ##Tourist server-site
 ----------------------------------------------
-github Link:[github Link](https://github.com/Subrata34/tourist-server) 
+github server site  Link:[github Link](https://github.com/Subrata34/tourist-server) 
