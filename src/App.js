@@ -8,6 +8,7 @@ import Service from './Component/Service/Service';
 import Header from './Component/Header/Header';
 import Booking from './Component/Booking/Booking';
 import MangeUser from './Component/MangeUser/MangeUser';
+import Tourplace from './Component/TourPlace/Tourplace';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
         <Route path="Service" element={<Service />} />
         <Route path="header" element={<Header />} />
         <Route path="place" element={<MangeUser />} />
+        <Route path="tourplace" element={<Tourplace />} />
       </Routes>
     </BrowserRouter>
     </div>
