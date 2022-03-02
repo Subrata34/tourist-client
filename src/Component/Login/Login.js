@@ -33,7 +33,7 @@ const Login = () => {
         
         </form>
         <br />
-        <Button variant="contained" onClick={}>Google Sign In</Button>
+        <Button variant="contained" onClick={signInUsingGoogle}>Google Sign In</Button>
         <br />
         <Button variant="contained" ><Link to="/register" style={{textDecoration:"none"}}>please Register?</Link></Button>
     </div>
