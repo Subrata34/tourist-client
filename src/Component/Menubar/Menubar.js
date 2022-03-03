@@ -1,12 +1,12 @@
 import React from 'react'
 import './Menuvar.css';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase'
 import { Button } from '@mui/material';
+import useAuth from '../../hooks/useAuth';
 
 
 const Menubar = () => {
-  const{user,logOut}=useFirebase();
+  const{user,logOut}=useAuth();
   return (
     <div className='menu' style={{backgroundColor:"black",color:"white"}}>
       <div>

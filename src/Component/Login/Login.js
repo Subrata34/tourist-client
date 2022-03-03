@@ -1,13 +1,13 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import useFirebase from "../../hooks/useFirebase";
+import useAuth from "../../hooks/useAuth";
 import Footer from "../Footer/Footer";
 import Menubar from "../Menubar/Menubar";
 import Topbanner from "../Topbanner/Topbanner";
 
 const Login = () => {
-  const { signInUsingGoogle } = useFirebase();
+  const { signInUsingGoogle } = useAuth();
   return (
     <div>
       <Menubar></Menubar>
