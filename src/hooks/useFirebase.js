@@ -4,8 +4,11 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   onAuthStateChanged,
-  signOut 
+  signOut,
 } from "firebase/auth";
+import initializeAuthentrication from "../Component/Firebase/Firebase.init";
+
+initializeAuthentrication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
@@ -17,12 +20,11 @@ const useFirebase = () => {
       console.log(result.user);
     });
   };
- const logOut=()=>{
-     signOut(auth)
-     .then(()=>{
-       setUser({})
-     })
- }
+  const logOut = () => {
+    signOut(auth).then(() => {
+      setUser({});
+    });
+  };
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -34,9 +36,9 @@ const useFirebase = () => {
     });
   }, []);
   return {
-      user,
-      signInUsingGoogle,
-      logOut
-  }
+    user,
+    signInUsingGoogle,
+    logOut,
+  };
 };
- export default useFirebase;
+export default useFirebase;
