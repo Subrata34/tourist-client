@@ -13,7 +13,7 @@ import AuthProvider from "./Context/AuthProvider";
 import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <AuthProvider>
         <BrowserRouter>
           <Routes>
@@ -21,7 +21,9 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="footer" element={<Footer />} />
-            <Route path="booking" element={<Booking />} />
+            <Route path="/booking/:serviceId" element={<PrivateRoute>
+              <Booking />
+            </PrivateRoute>}></Route>
             <Route path="login" element={<Login />} />
             <Route path="Service" element={<Service />} />
             <Route path="header" element={<Header />} />

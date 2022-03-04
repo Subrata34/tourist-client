@@ -12,9 +12,9 @@ const Login = () => {
     <div>
       <Menubar></Menubar>
       <Topbanner></Topbanner>
-      <div>
+      <div style={{ marginTop:"-10px" }}>
         <h1>Please Login</h1>
-        <form action="">
+        <form action="" >
           <TextField
             type="email"
             label="Email Address"
@@ -31,14 +31,17 @@ const Login = () => {
             variant="standard"
           />
           <br />
+          <br />
           <Button variant="contained" style={{ width: "20%" }}>
             Sign In
           </Button>
+          <br />
+          <br />
+          <Button variant="contained"style={{color:"white",textDecoration:"none"}} onClick={signInUsingGoogle}>
+            Google Sign In
+          </Button>
         </form>
-        <br />
-        <Button variant="contained" onClick={signInUsingGoogle}>
-          Google Sign In
-        </Button>
+
         <br />
         <br />
         <Button variant="contained">
