@@ -8,7 +8,7 @@ import { Grid } from "@mui/material";
 const Home = () => {
   const [products, setProucts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/place")
+    fetch("https://radiant-island-18004.herokuapp.com/place")
       .then((res) => res.json())
       .then((data) => setProucts(data));
   }, []);
