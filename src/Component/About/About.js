@@ -12,7 +12,7 @@ const About = () => {
       <div >
         <h1>About Us</h1>
         <img style={{width:"1400px",height:"600px"}} src={img02} alt="" />
-        <p>This is tour related service . This sit is Tour servceing website.</p>
+        <p>This is tour related service . This sit is Tour servceing website.This site provide best and enjoyable tour.</p>
       </div>
 
       <Footer></Footer>
